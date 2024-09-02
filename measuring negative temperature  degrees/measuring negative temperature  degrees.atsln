@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "measuring negative temperature  degrees", "measuring negative temperature  degrees\measuring negative temperature  degrees.cproj", "{CD6101D0-2617-4013-BAFB-C4D56E315D16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD6101D0-2617-4013-BAFB-C4D56E315D16}.Debug|AVR.ActiveCfg = Debug|AVR
+		{CD6101D0-2617-4013-BAFB-C4D56E315D16}.Debug|AVR.Build.0 = Debug|AVR
+		{CD6101D0-2617-4013-BAFB-C4D56E315D16}.Release|AVR.ActiveCfg = Release|AVR
+		{CD6101D0-2617-4013-BAFB-C4D56E315D16}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

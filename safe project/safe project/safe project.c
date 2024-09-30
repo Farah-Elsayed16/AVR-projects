@@ -7,8 +7,10 @@
 
 #include "LED.h"
 #include "LCD.h"
+#include "buzzer.h"
 #include "keybad.h"
 #include "EEPROM.h"
+#include "servo.h"
 #define F_CPU 8000000UL
 #include <util/delay.h>
 #define EEPROM_STATUS 0X19
@@ -22,9 +24,9 @@ int main(void)
 	
 	LCD_INIT();
 	keybad_init();
-	LED_INIT('b',0);
 	LED_INIT('b',1);
-
+	LED_INIT('b',2);
+	buzzer_INIT('b',0);
 	if(EEPROM_READ(EEPROM_STATUS) != 1)
 	{
 	lCD_MOVE_CURSOR(1,3);
@@ -37,7 +39,7 @@ int main(void)
 	while(counter<4)
 	{
 		x=keybad_check_press();
-		if(x != 0xff )
+		if(x != 0xff)
 		{
 				_delay_ms(50);
 				LCD_SEND_CHAR(x);
@@ -101,9 +103,10 @@ int main(void)
 				LCD_SEND_STRING("Right password");
 				lCD_MOVE_CURSOR(2,1);
 				LCD_SEND_STRING("Safe opened!!");
-				LED_ON('b',0);
+				LED_ON('b',2);
 				_delay_ms(2000);
-				LED_OFF('b',0);
+				LED_OFF('b',2);
+				servo_degree(90);
 				flag =1;
 			}
 			else
@@ -128,8 +131,10 @@ int main(void)
 					LCD_SEND_STRING("Safe Closed");
 					flag=1;
 					LED_ON('b',1);
+					buzzer_ON('b',0);
 					_delay_ms(1000);
 					LED_OFF('b',1);
+					buzzer_OFF('b',0);
 				}
 			}
 				}	

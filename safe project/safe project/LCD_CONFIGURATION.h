@@ -2,7 +2,7 @@
  * LCD_CONFIGURATION.h
  *
  * Created: 7/19/2024 1:09:26 PM
- *  Author: abdullah
+ *  Author: farah
  */ 
 
 

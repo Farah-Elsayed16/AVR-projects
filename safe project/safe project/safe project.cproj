@@ -112,7 +112,19 @@
     <Compile Include="safe project.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="servo.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="servo.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="STD_MACROS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="timer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="timer.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

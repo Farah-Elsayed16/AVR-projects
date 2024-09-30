@@ -2,7 +2,7 @@
  * EEPROM.c
  *
  * Created: 7/8/2024 1:07:56 AM
- *  Author: abdullah
+ *  Author: Farah
  */ 
 
 #include "Register_names.h"
